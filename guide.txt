@@ -1,0 +1,20 @@
+We'll a lot to unpack here for sho'.
+
+New thing, how to simulate an enter key for the button:
+
+- on the text field, input, page, wherever you want to look for key downs, you add this property:
+  onKeyDown={handleKeyPress}
+
+- then you previously should have defined this, "enter" code is 13:
+const handleKeyPress = (e) => {
+    // look for the `Enter` keyCode
+    if (e.keyCode === 13 || e.which === 13) {
+      callApi()
+    }
+  }
+
+  
+
+
+open link on new tab:
+- target="_blank"
